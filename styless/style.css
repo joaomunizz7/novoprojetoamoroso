@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2? family= PT+Sans:ital,wght@0,400;0,700;1,400;1,700 & display=swap');
+:root {
+    --cor-primaria: #010e22;
+    --cor-secundaria: #184a96;
+    --cor-terciaria: #EADBC8;
+    --cor-hover: #1c51a0;
+    }
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+/*     height: 100vh; */
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    font: 16;
+    font-style: oblique;
+    color: var(--cor-terciaria);
+}
+strong {
+color: var(--cor-secundaria);
+}
+.apresentacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5% 20%;
+    gap: 82px;
+}
+.apresentacao_conteudo{
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+}
+.tituloapresentacao{
+    font-size: 36px;
+}
+.apresentacao_texto{
+    font-size: 24px;
+}
+.titulo_botoes{
+    font-weight: 500;
+    font-size: 24px;
+}
+.botoes{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+.botoes_link{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    width: 278px;
+    text-align: center;
+    border-radius: 12px;
+    border: 3px solid var(--cor-secundaria);
+    box-shadow: 30px var(--cor-terciaria);
+    font-size: 20px;
+    font-weight: 600;
+    padding: 12.5px 15px;
+    text-decoration: none;
+    color: var(--cor-terciaria);
+
+}
+.botoes_link:hover{
+    background-color: var(--cor-hover);
+    padding: 3%;
+}
+.rodape{
+    color: var(--cor-primaria);
+    background-color: var(--cor-secundaria);
+    padding: 24px;
+    text-align: center;
+    font-size: 25px;
+}
+.cabecario{
+ padding: 2% 0% 0% 15%;   
+    
+}
+.cabecario_menu{
+    display: flex;
+    gap: 80px;
+}
+.cabecario_menu_link{
+    color:var(--cor-secundaria);
+
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.apresentacao__conteudo__texto a{
+    text-decoration: none;
+    color: var(--cor-secundaria);
+}
+.cabecario_menu_link{
+    text-decoration: none;
+}
+.apresentacao_sobremim{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5% 20%;
+    gap: 80px;
+}
+
+@media (max-width: 1200px){
+    .cabecario
+    {
+        padding: 10% ;
+    }
+    .cabecario_menu{
+      justify-content: center;  
+    }
+    .apresentacao
+    {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .apresentacao_conteudo{
+        width: auto
+    };
+
+}
+
